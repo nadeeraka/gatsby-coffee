@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
 import { FaCartArrowDown } from "react-icons/fa"
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   state = {
     navBarOpen: false,
     css: "",
@@ -72,3 +72,4 @@ https://www.iconfinder.com/webalys */}
     )
   }
 }
+export default Navbar
