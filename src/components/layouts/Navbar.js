@@ -37,21 +37,21 @@ class Navbar extends Component {
       <>
         <div>
           <nav className="navbar navbar-expand-sm bg-light navbar-light">
-            <Link to="/" className="navbar-brand">
+            <Link to="/" className="navbar-brand c">
               <img src={logo} alt="logo" />
               {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/webalys */}
             </Link>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               onClick={this.navbarOn}
             >
               <span className="navbar-toggler-icon" />
             </button>
             <div className={this.state.css}>
-              <ul className=" navbar-nav mx-auto">
+              <ul className="nav navbar-nav  mx-auto ">
                 {this.state.links.map(link => {
                   return (
                     <li className="nav-item " key={link.id}>
