@@ -6,7 +6,7 @@ import { FaCartArrowDown } from "react-icons/fa"
 export default class Navbar extends Component {
   state = {
     navBarOpen: false,
-    css: "collapse navbar-collapse",
+    css: "",
     links: [
       {
         id: 1,
@@ -21,7 +21,15 @@ export default class Navbar extends Component {
     ],
   }
   navbarOn = () => {
-    console.log("on")
+    this.setState({ navBarOpen: true })
+    if (this.state.navBarOpen) {
+      this.setState({ css: "collapse navbar-collapse show", navBarOpen: false })
+    } else {
+      this.setState({
+        css: "collapse navbar-collapse ",
+        navBarOpen: true,
+      })
+    }
   }
 
   render() {
@@ -53,6 +61,9 @@ https://www.iconfinder.com/webalys */}
                     </li>
                   )
                 })}
+                <li className="nav-item  ml-sm-5">
+                  <FaCartArrowDown className="cart-icon" />
+                </li>
               </ul>
             </div>
           </nav>
