@@ -27,7 +27,11 @@ h6 {
   cursor: pointer;
   color: #ff9e09;
   font-size: 2rem;
+  padding: 0;
 }
 .c {
   margin-left: 500px;
+}
+.pad {
+  padding-right: 20px;
 }
